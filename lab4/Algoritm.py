@@ -145,12 +145,37 @@ class Algoritm:
         print(f"Total kostnad för behanlingar: {kostnad:.2f} kr")
 
     def uppgift8():
-        #s7 i lab4
+        räknare = 0
+        antalRättAnv1 = 0
+        antalRättAnv2 = 0
+        antalRundor = 10
+
+        while räknare < antalRundor:
+                talAnv1 = int(input("användare1 ange ett tal"))
+                talAnv2 = int(input("användare2 ange ett tal"))
+                if talAnv1 == talAnv2:
+                    print("Rundan blev oavgjord")
+                elif talAnv1 > talAnv2:
+                    print("Användare 1 vann rundan")
+                    antalRättAnv1 += 1
+                elif talAnv2 > talAnv1:
+                    print("Användare 2 vann rundan")
+                    antalRättAnv2 += 1
+                räknare += 1
+        if antalRättAnv1==antalRättAnv2:
+                print("Matchen blev oavgjord")
+        elif antalRättAnv1 > antalRättAnv2:
+                print("Användare 1 vann matchen")
+        elif antalRättAnv2 > antalRättAnv1:
+                print("Användare 2 vann matchen")
+
+    def uppgift9():
+
         
 
                 
 
-    uppgift8()
+    uppgift9()
       
 
 
