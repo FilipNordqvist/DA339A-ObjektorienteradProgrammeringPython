@@ -169,13 +169,10 @@ class Algoritm:
         elif antalRättAnv2 > antalRättAnv1:
                 print("Användare 2 vann matchen")
 
-    def uppgift9():
 
         
 
-                
-
-    uppgift9()
+        
       
 
 
