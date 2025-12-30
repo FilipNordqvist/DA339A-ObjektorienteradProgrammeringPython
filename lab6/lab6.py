@@ -107,7 +107,34 @@ class lab6:
         for i in reversed(range(1,5)):
             print("*"*i)
 
-    #d Julgrannen
+        #d
+        height = 5 #Höjden på granen
+
+        for i in range(height):
+                space = height - i - 1 #Mellanrum minskar per rad
+                stars = 2 * i + 1 #Stjärnor ökar med två per rad
+                print(" " * space + "*" * stars)
+                #Första loopen får height(5) - i (0) - 1 = 4 mellanrum och stjärnor 2 * i (0) + 1
+                #    *
+                #Andra loopen får height(5) - i (1) -1 = 3 mellanrum och stjärnor 2 * i (1) + 1
+                #   ***
+                #Tredje loopen får height(5) - i (2) -1 = 2 mellanrum och stjärnor 2 * i (2) + 1
+                #  *****
+        print(" " * (height - 1) + "*") #Foten till granen
+
+    def uppgift5a():
+        print("Celsius -> Fahrenheit")
+
+        for celsius in range(10,101,10):
+            farenheit = celsius * 1.8 + 32
+            print(f"{celsius:.1f} -> {farenheit}")
+    
+    def uppgift5b():
+        print("Farenheit -> Celsius")
             
-    uppgift4()
+        for farenheit in range(10,101,10):
+            celsius = (((farenheit - 32) * 5)/9)
+            print(f"{farenheit} -> {celsius:.1f}")
+
+
 
