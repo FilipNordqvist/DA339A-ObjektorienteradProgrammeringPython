@@ -2,8 +2,10 @@ class lab8():
 
 
 
-    def showMenu(self): 
-        while True:
+    def showMenu(self):
+        active = True
+
+        while active:
             print("Select one:")
             print("1. Countdown")
             print("2. Add numbers")
@@ -13,17 +15,24 @@ class lab8():
             print("6. Temperature")
             print("0. Exit")
 
-            choice = self.makeChoice()
-            print("Du valde: ", choice)
-            
-            if choice == 0:
-                break
+            self.makeChoice()  
 
     
     def makeChoice(self):
         choice = int(input("Make a choice:"))
-        return choice
         
+        match choice:
+            case 1:
+                self.countdown()
+            case _:
+                print("Ogiltigt val, testa igen")
+
+    def countdown(self):
+        for i in range(10):
+            print(i-1, end=" ")
+        print()
+    
+           
 
 lab = lab8()    
 lab.showMenu()
