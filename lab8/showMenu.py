@@ -1,5 +1,6 @@
 from makeChoice import makeChoice
 from countdown import countdown
+from number import number
 
 
 class showMenu:
@@ -25,6 +26,19 @@ class showMenu:
                     active = False
                 case 1:
                     countdown.count()
+                case 2:
+                    tal1 = int(input("Ange första numret: "))
+                    tal2 = int(input("Ange andra numret: "))
+                    result = number.addNumber(tal1,tal2)
+                    print(f"Resultater är: {result}")
+                case 3:
+                    tal1 = int(input("Ange första numret: "))
+                    tal2 = int(input("Ange andra numret: "))
+                    number.compare(tal1, tal2)
+                case 4:
+                    print("Oj detta funkade?")
                 case _:
                     print("Ogiltigt val, testa igen")
                     active = False
+
+                
