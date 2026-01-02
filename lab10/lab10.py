@@ -34,8 +34,44 @@ class lab10:
         print("Tal -> Index")
         for value, index in result:
             print(value," -> ", index)
+    
+    def uppgift3a(self):
+        students = [
+    ["Adam", "Ason", "661122", "35", "U"],
+    ["Beata", "Bson", "770111", "38", "G"],
+    ["Calle", "Ceson", "880222", "23", "U"],
+    ["Dorotea", "Deson", "990311", "44", "VG"],
+    ["Eivar", "Eson", "550423", "40", "G"],]
+        
+        for student in students: 
+            if student[4] == "G" or student[4] == "VG":
+                print(student[1],student[4])
+            else:
+                continue
+
+        print("\nEfter omvandling:\n")
+
+        #3b
+        for student in students:
+            if student[4] == "G":
+                student[4] = 25
+            elif student[4] == "VG":
+                student[4] = 40
+        #Nya betyg
+        for student in students:
+            if student[4] == 25 or student[4] == 40:
+                print(student[0],student[1],student[4])
+        
+        def uppgift4(self):
+            testArray = [3.3, 2.7, 6.4, 1.8, 9.5, 1.4, 9.0, 7.0, 6.5, 3.7]
+        
+        
+    
+
+
+
 
 
     
 lab = lab10()
-lab.uppgift2b()
+lab.uppgift3a()
