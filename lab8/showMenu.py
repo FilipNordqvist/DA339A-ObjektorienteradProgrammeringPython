@@ -39,6 +39,6 @@ class showMenu:
                     print("Oj detta funkade?")
                 case _:
                     print("Ogiltigt val, testa igen")
-                    active = False
+                    #active = False
 
                 
