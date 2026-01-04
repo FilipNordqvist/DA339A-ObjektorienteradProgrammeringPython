@@ -62,16 +62,50 @@ class lab10:
             if student[4] == 25 or student[4] == 40:
                 print(student[0],student[1],student[4])
         
-        def uppgift4(self):
-            testArray = [3.3, 2.7, 6.4, 1.8, 9.5, 1.4, 9.0, 7.0, 6.5, 3.7]
-        
-        
-    
-
-
-
-
+    def uppgift4(self):
 
     
+        testArray = [3.3, 2.7, 6.4, 1.8, 9.5, 1.4, 9.0, 7.0, 6.5, 3.7]
+        
+        biggest_number = max(testArray)
+        smallest_number = min (testArray)
+        average_number = 0
+
+        for value in testArray:
+            average_number += value
+             
+        average_number = average_number / len(testArray)
+        print(f"Medelvärde: {average_number:.1f}, Största tal: {biggest_number} och minsta tal: {smallest_number}")
+
+    def uppgift5(self):
+        testArray1 = [3.3, 2.7, 6.4, 1.8, 9.5, 1.4, 9.0, 7.0, 6.5, 3.7]
+        testArray2 = [5.6, 4.7, 2.8, 3.7, 5.8, 2.7, 6.4, 1.8, 9.5, 10.2]
+
+        differences = []
+
+        for x,y in zip(testArray1,testArray2):
+            if x != y:
+                differences.append(abs(x - y)) #Lägger in skillanderna i en egen array
+            
+        if not differences:
+            print("De är lika")
+        else:
+            print(f"De är inte lika, Skillnader: {len(differences)}, Största skillanden: {max(differences):.1f} ") #max  blir det största talet i arrayen som också är den största skillanden mellan talen jämfört.
+    
+    def uppgift6(self):
+        b = [0,12,13,14,13,0,0,15,15,0,13,0,0,15,34,2,3,4,5,6,1,2,3,4,5,6,0,0,0,0,0]
+
+        # Går igenom varje element x(value) i listan b och lägger till det i new
+        # endast om värdet inte är 0
+        new = [x for x in b if x != 0] 
+        
+        print(f"Gamla arrayen {b}")
+        print(f"Utan 0 {new}")
+
+    def uppgift7(self):
+        print("Börja här -->")
+
+
+
 lab = lab10()
-lab.uppgift3a()
+lab.uppgift7()
