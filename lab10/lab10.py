@@ -103,7 +103,16 @@ class lab10:
         print(f"Utan 0 {new}")
 
     def uppgift7(self):
-        print("Börja här -->")
+        #a det största av talen på varje position och lagra i en ny tredje array 
+        array1 = [[1,2,3],[11,12,13],[6,3,23]]
+        array2 = [[1,1,4],[1,2,3],[21,7,23]]
+        new = []
+
+    
+                    
+
+
+       
 
 
 
