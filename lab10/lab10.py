@@ -106,19 +106,8 @@ class lab10:
         #ta det största av talen på varje position och lagra i en ny tredje array 
         array1 = [[1,2,3],[11,12,13],[6,3,23]]
         array2 = [[1,1,4],[1,2,3],[21,7,23]]
-        
-        new = []
-
-for i in range(len(array1)):        # rader
-    new_row = []
-    for j in range(len(array1[i])): # kolumner
-        if array1[i][j] > array2[i][j]:
-            new_row.append(array1[i][j])
-        else:
-            new_row.append(array2[i][j])
-    new.append(new_row)
-
-print(new)
+    
+    #repitera senare
        
 
 lab = lab10()
