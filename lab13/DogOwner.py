@@ -6,9 +6,12 @@ class DogOwner:
         self.name = name
         self.address = address
         self.number_of_dogs = number_of_dogs
+        self.dog = None
     
 
     def set_adress(self,address):
+        if not address.strip():
+             raise ValueError("Vänligen ange en adress")
         self.address = address
 
     def get_adress(self):

@@ -12,8 +12,7 @@ class Dog():
         try:
             self.age = int(age)
         except ValueError:
-            print("Ålder måste vara en siffra")
-                
+            print("Ålder måste vara en siffra")            
         
     def get_gender(self):
         return self.gender
