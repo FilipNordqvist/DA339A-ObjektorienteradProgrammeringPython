@@ -7,6 +7,13 @@ class DogOwner:
         self.address = address
         self.number_of_dogs = number_of_dogs
         self.dog = None
+        
+    def get_dog(self):
+        age = int(input("Hur gammal är din hund? "))
+        gender = input("Är din hund Hona eller Hane? ")
+        name = input("Vad heter din hund? ") 
+        self.dog = Dog(age,gender, name)  # Skapar Dog objektet, self betyder att du pratar med samma instans av objektet
+        return self.dog
     
 
     def set_adress(self,address):
@@ -17,8 +24,6 @@ class DogOwner:
     def get_adress(self):
         return self.address
 
-    def get_dog(self):
-        return self.dog
 
     def get_name(self):
         return self.name
