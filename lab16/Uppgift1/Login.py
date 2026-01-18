@@ -3,5 +3,5 @@ class Login():
         self.id = id
         self.password = password
 
-    def to_string(self):
-        print(f"ID: {self.id}, Password: {self.password}")
+    def __str__(self):
+        return f"ID: {self.id}, Password: {self.password}"

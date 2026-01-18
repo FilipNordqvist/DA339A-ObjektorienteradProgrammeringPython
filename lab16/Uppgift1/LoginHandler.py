@@ -4,6 +4,8 @@ class LoginHandler:
         self.num_of_elements = 0  # Startar utan några element
         self.max_elements = max_elements
 
+
+    #Lägger till login i listan om det finns plats.
     def add_new(self, login):
         success = True
 
@@ -17,6 +19,7 @@ class LoginHandler:
 
         return success
 
+    #Tar bort element med hjälp av index
     def remove_elements_at(self,index):
         success = True
         
@@ -30,5 +33,6 @@ class LoginHandler:
         
         return success
 
+    #Returnerar längden på listan
     def get_numers_of_elements(self):
         return len(self.login_list)
