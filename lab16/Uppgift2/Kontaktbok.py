@@ -6,15 +6,12 @@ from Person import Person
 class Kontaktbok():
     
     def main():
-        telefon1 = Telefon("+46 70 71234", TelefonTyp.arbete)
+        telefon = Telefon("+46 70 71234", TelefonTyp.ARBETE)
+        print(telefon)
 
-        person1 = Person("Homer simpson", telefon1)
+        person = Person("Homer simpson", telefon)
+        print(person)
         
-        print(telefon1.__str__)
-        
-        
-        
-     
         
     if __name__ == "__main__":
         main()
