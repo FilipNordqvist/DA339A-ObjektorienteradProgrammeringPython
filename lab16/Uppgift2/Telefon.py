@@ -19,4 +19,4 @@ class Telefon:
         self._telefon_typ = telefon_typ
 
     def __str__(self):
-        return f"Telefonnummer: {self._nummer}, Typ: {self._telefon_typ}"
+        return self.nummer + " (" + self.telefon_typ.value + ")"
