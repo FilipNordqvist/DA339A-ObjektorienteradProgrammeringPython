@@ -2,14 +2,14 @@ from Telefon import Telefon
 from TelefonTyp import TelefonTyp
 
 class Person:
-    def __init__(self, namn,nummer, telefon):
-        self.namn = namn
-        self.telefon = telefon
-        
-        ny_telefon = Telefon(nummer,telefon)
+    def __init__(self, namn, nummer, tel_typ):
+        #Skapar ett Telefon-objekt
+        ny_telefon = Telefon(nummer, tel_typ)
+
         self.namn = namn
         self.telefon = ny_telefon
 
+    #Getters och setters
     def get_namn(self):
         return self.namn
 
@@ -23,4 +23,4 @@ class Person:
         self.telefon = telefon
 
     def __str__(self):
-        return self.namn + " har numret " + str(self.telefon)
+        return f"{self.namn} har numret {self.telefon}"
