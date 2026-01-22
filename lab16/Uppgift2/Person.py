@@ -1,9 +1,14 @@
 from Telefon import Telefon
+from TelefonTyp import TelefonTyp
 
 class Person:
-    def __init__(self, namn, telefon):
+    def __init__(self, namn,nummer, telefon):
         self.namn = namn
         self.telefon = telefon
+        
+        ny_telefon = Telefon(nummer,telefon)
+        self.namn = namn
+        self.telefon = ny_telefon
 
     def get_namn(self):
         return self.namn
